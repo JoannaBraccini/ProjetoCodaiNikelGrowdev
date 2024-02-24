@@ -195,8 +195,3 @@ function saveData(data) {
 function sortTransactionsByDate() {
     data.transactions.sort((a, b) => new Date(b.date) - new Date(a.date));
 }
-
-function formatarDataBrasileira(data) {
-    const opcoes = { day: 'numeric', month: 'numeric', year: 'numeric' };
-    return new Intl.DateTimeFormat('pt-BR', opcoes).format(new Date(data));
-}
